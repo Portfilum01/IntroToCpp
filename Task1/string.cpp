@@ -19,3 +19,6 @@ String& String::ToLower()
 	// TODO: insert return statement here
 }
 
+// structs and classes
+// object oriented programming/principals
+// consturtors and destrcutors

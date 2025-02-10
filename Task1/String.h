@@ -42,4 +42,9 @@ private:
 /*
 * Put your internal data structures and members here
 */
+
 };
+
+// structs and classes
+// object oriented programming/principals
+// consturtors and destrcutors

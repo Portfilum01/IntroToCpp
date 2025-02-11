@@ -11,7 +11,6 @@ String::String()
 // Creates a string using a pointer to a C String.
 String::String(const char* _str)
 {
-	const char cString{};
-	string string = &cString;
+	std::string() = _str;
 }
 

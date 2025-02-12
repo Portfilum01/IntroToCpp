@@ -9,5 +9,5 @@ int main()
 {
 	String alienMan("umamu");
 
-	std::cout << "avoiding annoying null errors, dont mind me";
+	cout << alienMan;
 }

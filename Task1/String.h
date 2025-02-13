@@ -39,9 +39,7 @@ public:
 	bool operator<(const String& _str);
 
 private:
-/*
-* Put your internal data structures and members here
-*/
+	char* myString;
 
 };
 

@@ -7,7 +7,6 @@ using namespace std;
 
 int main()
 {
-	String alienMan("umamu");
 
-	cout << alienMan;
+	cout << "yo";
 }

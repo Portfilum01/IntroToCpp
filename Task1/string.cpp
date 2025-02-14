@@ -15,7 +15,7 @@ String::String()
 String::String(const char* _str)
 {
 	// Gets the length of the string
-	int lengthOfString = strlen(_str);
+	lengthOfString = strlen(_str);
 
 	//Changes the size of the char array in myString
 	myString = new char[lengthOfString + 1];
@@ -24,14 +24,14 @@ String::String(const char* _str)
 	strcpy_s(myString, lengthOfString + 1, _str);
 }
 
-String::~String()
+// Construct a string with another string
+String::String(const String& _other)
 {
-	delete[] myString;
 }
 
-int main()
+// String Destructor
+String::~String()
 {
-	String testString("teststring");
-
-	cout << "YEEEEHAWWWWWWW";
+	//Destroys the created object in myString. #freethememory...
+	delete[] myString;
 }

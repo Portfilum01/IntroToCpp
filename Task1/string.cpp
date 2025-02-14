@@ -21,7 +21,7 @@ String::String(const char* _str)
 	myString = new char[lengthOfString + 1];
 
 	// Copies the _str to myString
-	strcpy_s(myString, lengthOfString, _str);
+	strcpy_s(myString, lengthOfString + 1, _str);
 }
 
 String::~String()
@@ -29,3 +29,9 @@ String::~String()
 	delete[] myString;
 }
 
+int main()
+{
+	String testString("teststring");
+
+	cout << "YEEEEHAWWWWWWW";
+}

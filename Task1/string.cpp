@@ -18,14 +18,14 @@ String::String(const char* _str)
 	int lengthOfString = strlen(_str);
 
 	//Changes the size of the char array in myString
-	char* myString = new char[lengthOfString + 1];
+	myString = new char[lengthOfString + 1];
 
 	// Copies the _str to myString
 	strcpy_s(myString, lengthOfString, _str);
 }
 
-//int main()
-//{
-//	String::String("mantis");
-//	cout << *myString;
-//}
+int main()
+{
+	String::String("bunger");
+	cout << "YUCK!";
+}

@@ -43,6 +43,3 @@ private:
 
 };
 
-// structs and classes
-// object oriented programming/principals
-// consturtors and destrcutors

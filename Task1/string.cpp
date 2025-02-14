@@ -27,6 +27,7 @@ String::String(const char* _str)
 // Construct a string with another string
 String::String(const String& _other)
 {
+	
 }
 
 // String Destructor
@@ -35,3 +36,4 @@ String::~String()
 	//Destroys the created object in myString. #freethememory...
 	delete[] myString;
 }
+

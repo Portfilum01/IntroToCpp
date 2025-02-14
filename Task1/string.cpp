@@ -24,8 +24,8 @@ String::String(const char* _str)
 	strcpy_s(myString, lengthOfString, _str);
 }
 
-int main()
+String::~String()
 {
-	String::String("bunger");
-	cout << "YUCK!";
+	delete[] myString;
 }
+

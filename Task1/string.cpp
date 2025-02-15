@@ -7,13 +7,13 @@ String::String()
 {
 	//takes my string and makes an array with only 1 value
 	myString = new char[1];
-
 	//Makes it into an empty string by assigning 0 to the 0th position.
 	myString[0] = 0;
 }
 
 String::String(const char* _str)
 {
+
 	// Gets the length of the string
 	lengthOfString = strlen(_str);
 
@@ -28,6 +28,7 @@ String::String(const char* _str)
 String::String(const String& _other)
 {
 	
+
 }
 
 // String Destructor
@@ -37,3 +38,9 @@ String::~String()
 	delete[] myString;
 }
 
+int main()
+{
+	String myString = "This is a string";
+	String myDeepCopy = String(myString);
+
+}

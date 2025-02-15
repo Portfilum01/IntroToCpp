@@ -40,6 +40,6 @@ public:
 
 private:
 	char* myString;
-	int lengthOfString;
+	int lengthOfString = 0;
 };
 

@@ -27,8 +27,17 @@ String::String(const char* _str)
 // Construct a string with another string
 String::String(const String& _other)
 {
-	
+	// this gets the length of the referenced string
+	lengthOfString = strlen(_other.myString);
 
+	myString = new char[lengthOfString + 1];
+
+	// goes through the old string and copies everything over into the new string
+	for (int i = 0; i < lengthOfString; i++)
+		myString[i] = _other.myString[i];
+	
+	// adds the null terminator to the end
+	myString[lengthOfString] = '\0';
 }
 
 // String Destructor
@@ -41,6 +50,5 @@ String::~String()
 int main()
 {
 	String myString = "This is a string";
-	String myDeepCopy = String(myString);
-
+	String myDeepCopyExampleText = String(myString);
 }

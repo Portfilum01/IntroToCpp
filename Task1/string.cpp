@@ -128,11 +128,31 @@ int String::FindCharacter(const char _chr)
 	return -1;
 }
 
+int String::Replace(const char _find, const char _replace)
+{
+	// Declare a variable starting at 0 to count the amount of changes made
+	int changesMade = 0;
+
+	// For loop to iterate through each letter in the string
+	for (int i = 0; i < lengthOfString; i++)
+	{
+		// If statement to say if the specified letter is found, itll replace it with the _replace letter and will add 1 to the changesMade variable
+		if (myString[i] == _find)
+		{
+			myString[i] = _replace;
+			changesMade += 1;
+		}
+	}
+
+	// Returns the amount of changes made
+	return changesMade;
+}
+
 
 
 // example of usage
 int main()
 {
-	String exampleObject("Please z find my letter!");
-	exampleObject.FindCharacter('z');
+	String exampleObject("Sebestien");
+	exampleObject.Replace('e', 'a');
 }

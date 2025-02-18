@@ -75,7 +75,7 @@ String& String::Append(const String& _str)
 		newMyString[i] = myString[i];
 
 	// Adds _str elements into myNewString in front of old string 
-	for (int i = 0; i < tempLength; i++)
+	for (int i = 0; i < _str.lengthOfString; i++)
 		newMyString[lengthOfString + i] = _str.myString[i];
 
 	// Deletes data stored in myString
@@ -88,9 +88,22 @@ String& String::Append(const String& _str)
 	return *this;
 }
 
+String& String::ToLower()
+{
+	// Creates a for loop to iterate over each letter
+	for (int i = 0; i < lengthOfString; i++)
+		// Checks to see if it is a capital letter on the ASCII table
+		if(myString[i] >= 65 && myString[i] <= 92)
+			//If it is, it'll add 32 (making it a lowercase)
+			myString[i] = myString[i] + 32;
+	//returns the results
+	return *this;
+}
+
+
+
 int main()
 {
-	String FirstString("First");
-	String SecondString("Second");
-	FirstString.Append(SecondString);
+	String exampleString("ThiS IS REAlly InEFFiCiEnt tO SpELL");
+	exampleString.ToLower();
 }

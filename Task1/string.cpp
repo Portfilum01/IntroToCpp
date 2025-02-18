@@ -96,6 +96,7 @@ String& String::ToLower()
 		if(myString[i] >= 65 && myString[i] <= 92)
 			//If it is, it'll add 32 (making it a lowercase)
 			myString[i] = myString[i] + 32;
+
 	//returns the results
 	return *this;
 }
@@ -108,14 +109,30 @@ String& String::ToUpper()
 		if (myString[i] >= 97 && myString[i] <= 122)
 			//If it is, it'll remove 32 (making it an uppercase)
 			myString[i] = myString[i] - 32;
+
 	//returns the results
 	return *this;
 }
 
+int String::FindCharacter(const char _chr)
+{
+	// creates a for loop
+	for (int i = 0; i < lengthOfString; i++)
+	{
+		// an if statement to see if I's position is equal to _chr, then returns it if it is found.
+		if (myString[i] == _chr)
+			return i;
+	}
+
+	// If its not found, returns -1
+	return -1;
+}
 
 
+
+// example of usage
 int main()
 {
-	String exampleString("ThiS IS REAlly InEFFiCiEnt tO SpELL");
-	exampleString.ToUpper();
+	String exampleObject("Please z find my letter!");
+	exampleObject.FindCharacter('z');
 }

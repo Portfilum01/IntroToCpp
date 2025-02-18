@@ -100,10 +100,22 @@ String& String::ToLower()
 	return *this;
 }
 
+String& String::ToUpper()
+{
+	// Creates a for loop to iterate over each letter
+	for (int i = 0; i < lengthOfString; i++)
+		// Checks to see if it is a lowercase letter on the ASCII table
+		if (myString[i] >= 97 && myString[i] <= 122)
+			//If it is, it'll remove 32 (making it an uppercase)
+			myString[i] = myString[i] - 32;
+	//returns the results
+	return *this;
+}
+
 
 
 int main()
 {
 	String exampleString("ThiS IS REAlly InEFFiCiEnt tO SpELL");
-	exampleString.ToLower();
+	exampleString.ToUpper();
 }

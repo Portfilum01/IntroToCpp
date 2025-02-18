@@ -47,8 +47,14 @@ String::~String()
 	delete[] myString;
 }
 
+size_t String::Length() const
+{
+	int lengthReader = strlen(myString);
+	return lengthReader;
+}
+
 int main()
 {
-	String myString = "This is a string";
-	String myDeepCopyExampleText = String(myString);
+	String Corven("This is big");
+	Corven.Length();
 }

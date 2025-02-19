@@ -168,12 +168,17 @@ String& String::ReadFromConsole()
 }
 
 
-
+String& String::WriteToConsole()
+{
+	// Prints myString in the object to the console
+	cout << myString;
+	return *this;
+}
 
 
 // example of usage
 int main()
 {
-	String otherString("Change me- I repent...");
-	otherString.ReadFromConsole();
+	String otherString("Hello, world!");
+	otherString.WriteToConsole();
 }

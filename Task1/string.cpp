@@ -236,10 +236,21 @@ String& String::operator=(const String& _str)
 	return* this;
 }
 
+bool String::operator<(const String& _str)
+{
+	// Stores the comparison in a variable
+	int result = strcmp(myString, _str.myString);
+	
+	// Since a negative comparison is what we want from the strcmp, we check to see if thats what we got, if it is then return true, if not then return false.
+	if (result < 0)
+		return true;
+	else return false;
+}
+
+// example of usage
 int main()
 {
-	String myString("I'm getting replaced.");
-	String myOtherString("I'm replacing them, mwahaha!");
-
-	myString = myOtherString;
+	String objectOne("due");
+	String objectTwo("dumb");
+	objectOne < objectTwo;
 }

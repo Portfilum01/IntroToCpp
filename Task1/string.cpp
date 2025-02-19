@@ -224,18 +224,22 @@ const char& String::operator[](size_t _index) const
 	}
 }
 
-// example of usage
+String& String::operator=(const String& _str)
+{
+	// Delete the used memory in myString
+	delete[] myString;
+	// Reassign enough memory to myStrijng
+	myString = new char[_str.lengthOfString + 1];
+	myString[_str.lengthOfString] = '\0';
+	// Copy over _str's string into myString and return the object
+	strcpy_s(myString, _str.lengthOfString +1, _str.myString);
+	return* this;
+}
+
 int main()
 {
-	// These are consts now, but it still works with non-const strings.
-	const String firstString("abcdef");
-	const String otherString("Olleh");
-	// Non const here
-	String OtherOtherString("LehoL");
+	String myString("I'm getting replaced.");
+	String myOtherString("I'm replacing them, mwahaha!");
 
-	firstString[4];
-	otherString[100];
-	// When its a non const, it still continues to work.
-	OtherOtherString[2];
-	
+	myString = myOtherString;
 }

@@ -72,11 +72,17 @@ String& String::Append(const String& _str)
 
 	// Copies over old string info into myNewString
 	for (int i = 0; i < lengthOfString; i++)
+	{
 		newMyString[i] = myString[i];
+			cout << "1";
+	}
 
 	// Adds _str elements into myNewString in front of old string 
 	for (int i = 0; i < _str.lengthOfString; i++)
+	{
 		newMyString[lengthOfString + i] = _str.myString[i];
+		cout << "2";
+	}
 
 	// Deletes data stored in myString
 	delete[] myString;
@@ -88,12 +94,15 @@ String& String::Append(const String& _str)
 	return *this;
 }
 
+
 String& String::ToLower()
 {
 	// Creates a for loop to iterate over each letter
 	for (int i = 0; i < lengthOfString; i++)
+
 		// Checks to see if it is a capital letter on the ASCII table
 		if(myString[i] >= 65 && myString[i] <= 92)
+
 			//If it is, it'll add 32 (making it a lowercase)
 			myString[i] = myString[i] + 32;
 
@@ -148,11 +157,23 @@ int String::Replace(const char _find, const char _replace)
 	return changesMade;
 }
 
+String& String::ReadFromConsole()
+{
+	// Prints a prompt to console, then uses getline to put the user's input into myString (with a max of 80 characters
+	cout << "Feed me an input (max 80 characters): " << endl;
+	cin.getline(myString, 80);
+
+	// Returns the object
+	return *this;
+}
+
+
+
 
 
 // example of usage
 int main()
 {
-	String exampleObject("Sebestien");
-	exampleObject.Replace('e', 'a');
+	String otherString("Change me- I repent...");
+	otherString.ReadFromConsole();
 }

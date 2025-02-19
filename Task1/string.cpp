@@ -191,12 +191,29 @@ bool String::operator==(const String& _other)
 	return true;
 }
 
+char& String::operator[](size_t _index)
+{
+	// Detects whether or not its in range
+	if (_index < 0 || _index > lengthOfString)
+	{
+		// Creating a variable to pass \0 as a char and return it if the above is true.
+		char noReturn = '\0';
+		return noReturn;
+	}
+
+	// If it is false, it will return the letter at the position specified inside of _index.
+	else
+	{
+		return myString[_index];
+	}
+}
+
+// example of usage
 int main()
 {
-	String Box("Foo");
-	String Square("Foo");
-	String Circle("Circle");
+	String firstString("abcdef");
+	String otherString("Olleh");
 
-	Box == Square;
-	Box == Circle;
+	firstString[4];
+	otherString[100];
 }

@@ -176,9 +176,27 @@ String& String::WriteToConsole()
 }
 
 
-// example of usage
+bool String::operator==(const String& _other)
+{	
+	// Iterates through each letter
+	for (int i = 0; i <= lengthOfString; i++)
+	{
+		// When mismatching letters are found, it returns false.
+		if (myString[i] != _other.myString[i])
+		{
+			return false;
+		}
+	}
+	// Returns true if it goes out of scope (meaning no mismatches are found)
+	return true;
+}
+
 int main()
 {
-	String otherString("Hello, world!");
-	otherString.WriteToConsole();
+	String Box("Foo");
+	String Square("Foo");
+	String Circle("Circle");
+
+	Box == Square;
+	Box == Circle;
 }

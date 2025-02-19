@@ -208,12 +208,34 @@ char& String::operator[](size_t _index)
 	}
 }
 
+const char& String::operator[](size_t _index) const
+{
+	if (_index < 0 || _index > lengthOfString)
+	{
+		// Creating a variable to pass \0 as a char and return it if the above is true.
+		char noReturn = '\0';
+		return noReturn;
+	}
+
+	// If it is false, it will return the letter at the position specified inside of _index.
+	else
+	{
+		return myString[_index];
+	}
+}
+
 // example of usage
 int main()
 {
-	String firstString("abcdef");
-	String otherString("Olleh");
+	// These are consts now, but it still works with non-const strings.
+	const String firstString("abcdef");
+	const String otherString("Olleh");
+	// Non const here
+	String OtherOtherString("LehoL");
 
 	firstString[4];
 	otherString[100];
+	// When its a non const, it still continues to work.
+	OtherOtherString[2];
+	
 }

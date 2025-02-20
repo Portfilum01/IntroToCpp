@@ -74,14 +74,12 @@ String& String::Append(const String& _str)
 	for (int i = 0; i < lengthOfString; i++)
 	{
 		newMyString[i] = myString[i];
-			cout << "1";
 	}
 
 	// Adds _str elements into myNewString in front of old string 
 	for (int i = 0; i < _str.lengthOfString; i++)
 	{
 		newMyString[lengthOfString + i] = _str.myString[i];
-		cout << "2";
 	}
 
 	// Deletes data stored in myString
@@ -247,10 +245,3 @@ bool String::operator<(const String& _str)
 	else return false;
 }
 
-// example of usage
-int main()
-{
-	String objectOne("due");
-	String objectTwo("dumb");
-	objectOne < objectTwo;
-}

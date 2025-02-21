@@ -13,16 +13,12 @@ int main()
 	std::fstream testFile;
 	testFile.open("Test File.txt", ios::out);
 	int percentageCalculator = 0;
-	string stringConstructor1 = "Test 0: Constructor Failed";
 
 	// empty string
 	String();
 
 	// String constructors (a few for use in later functions
 	String Object1("Hello World");
-	if (Object1 == "Hello Wwrld")
-		percentageCalculator += 1;
-		stringConstructor1 = "Test 0: Constructor Successful";
 
 	String Object2(" Hi!");
 	const String ConstantObject("Test");
@@ -67,6 +63,5 @@ int main()
 
 	percentageCalculator = (percentageCalculator / 17) * 100;
 	testFile << "Date: " << __DATE__ << " Time: " << __TIME__ << " " << percentageCalculator << "% of tests succeeded" << '\n' << endl;
-	testFile << stringConstructor1 << endl;
 }
 

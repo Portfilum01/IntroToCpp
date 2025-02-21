@@ -20,12 +20,11 @@ int main()
 
 	// String constructors (a few for use in later functions
 	String Object1("Hello World");
-	if (Object1 == "Hello World")
+	if (Object1 == "Hello Wwrld")
 		percentageCalculator += 1;
 		stringConstructor1 = "Test 0: Constructor Successful";
 
 	String Object2(" Hi!");
-
 	const String ConstantObject("Test");
 
 	//String constructed from pointing to another string

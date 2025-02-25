@@ -9,11 +9,17 @@ using namespace std;
 
 int main()
 {
-	const int testsToRun = 0;
+	const int testsToRun = 2;
 
-	const char* testNames[testsToRun]   = {};
-	bool        testResults[testsToRun] = {};
+	const char* testNames[testsToRun]   = {"String Constructor", "Copy Constructor"};
+	bool        testResults[testsToRun] = {false, false};
 
+	{
+		String constructingString("I'm a String!");
+
+		if (constructingString == "I'm a String!")
+			testResults[0] = true;
+	}
 
 
 	for (int test = 0; test < testsToRun; ++test)

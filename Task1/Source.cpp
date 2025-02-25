@@ -9,10 +9,10 @@ using namespace std;
 
 int main()
 {
-	const int testsToRun = 2;
+	const int testsToRun = 3;
 
-	const char* testNames[testsToRun]   = {"String Constructor", "Copy Constructor"};
-	bool        testResult[testsToRun] = {false, false};
+	const char* testNames[testsToRun]   = {"String Constructor", "Copy Constructor", "Length"};
+	bool        testResult[testsToRun] = {false, false, false};
 
 	{
 		String constructingString("I'm a String!");
@@ -27,6 +27,13 @@ int main()
 
 		if (copiedString == "Test String")
 			testResult[1] = true;
+	}
+
+	{
+		String lengthOfString("Numbers!");
+
+		if (lengthOfString.Length() == 8)
+			testResult[2] = true;
 	}
 
 	for (int test = 0; test < testsToRun; ++test)

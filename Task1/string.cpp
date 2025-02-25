@@ -244,4 +244,3 @@ bool String::operator<(const String& _str)
 		return true;
 	else return false;
 }
-

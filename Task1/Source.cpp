@@ -12,29 +12,34 @@ int main()
 	const int testsToRun = 2;
 
 	const char* testNames[testsToRun]   = {"String Constructor", "Copy Constructor"};
-	bool        testResults[testsToRun] = {false, false};
+	bool        testResult[testsToRun] = {false, false};
 
 	{
 		String constructingString("I'm a String!");
 
 		if (constructingString == "I'm a String!")
-			testResults[0] = true;
+			testResult[0] = true;
 	}
 
+	{
+		String testString("Test String");
+		String copiedString(testString);
+
+		if (copiedString == "Test String")
+			testResult[1] = true;
+	}
 
 	for (int test = 0; test < testsToRun; ++test)
 	{
 		std::cout
 			<< "Test " << test << " " << testNames[test]
 			<< " "
-			<< (testResults[test] ? "Successful" : "Failed")
+			<< (testResult[test] ? "Successful" : "Failed")
 			<< std::endl;
 	}
 
 	// Making a test file
 	std::fstream testFile;
 	testFile.open("Test File.txt", ios::out);
-	int percentageCalculator = 0;
-
 }
 

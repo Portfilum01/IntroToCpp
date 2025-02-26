@@ -1,0 +1,60 @@
+2025 February 26, 21:10:44 | 84% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Failed 
+Test 12 Is less than Failed 
+
+2025 February 26, 21:14:35 | 76% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Failed 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Failed 
+Test 12 Is less than Failed 
+
+2025 February 26, 21:15:05 | 76% succeeded
+Test 0 String Constructor:  Failed 
+Test 1 Copy Constructor:  Failed 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Failed 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:17:17 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+

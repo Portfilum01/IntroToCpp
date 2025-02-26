@@ -15,7 +15,7 @@ int main()
 	const int testsToRun = 13;
 
 	// Makes a new array using the amount of tests to run as memory allocation
-	const char* testNames[testsToRun] = { "String Constructor: ", "Copy Constructor: ", "Length: ", "Append: ", "ToLower: ", "ToUpper: ", "FindCharacter: ", "Replace: ", "Equal To Operator (==): ", "Subscript Operator: ", "Const Subscript Operator: ", "Is equal to (=): ", "Is less than"};
+	const char* testNames[testsToRun] = { "String Constructor: ", "Copy Constructor: ", "Length: ", "Append: ", "ToLower: ", "ToUpper: ", "FindCharacter: ", "Replace: ", "Is Equal To Operator (==): ", "Subscript Operator: ", "Const Subscript Operator: ", "Equal to (=): ", "Is less than"};
 	bool testResult[testsToRun] = {false, false, false, false, false, false, false, false, false, false, false, false, false};
 
 	// Initializes the percentage calculator.

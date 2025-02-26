@@ -194,12 +194,7 @@ char& String::operator[](size_t _index)
 		char noReturn = '\0';
 		return noReturn;
 	}
-
-	// If it is false, it will return the letter at the position specified inside of _index.
-	else
-	{
-		return myString[_index];
-	}
+	return myString[_index];
 }
 
 const char& String::operator[](size_t _index) const

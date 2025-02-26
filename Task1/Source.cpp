@@ -9,10 +9,10 @@ using namespace std;
 
 int main()
 {
-	const int testsToRun = 10;
+	const int testsToRun = 11;
 
-	const char* testNames[testsToRun] = { "String Constructor", "Copy Constructor", "Length", "Append", "ToLower", "ToUpper", "FindCharacter", "Replace", "Equal To Operator", "Subscript Operator" };
-	bool testResult[testsToRun] = {false, false, false, false, false, false, false, false, false, false};
+	const char* testNames[testsToRun] = { "String Constructor", "Copy Constructor", "Length", "Append", "ToLower", "ToUpper", "FindCharacter", "Replace", "Equal To Operator", "Subscript Operator", "Const Subscript Operator"};
+	bool testResult[testsToRun] = {false, false, false, false, false, false, false, false, false, false, false};
 
 	{
 		String constructingString("I'm a String!");
@@ -91,8 +91,14 @@ int main()
 
 	{
 		String alphabet("abcdefghijklmnopqrstuvwxyz");
-		if (alphabet[11] == 'm')
+		if (alphabet[12] == 'm')
 			testResult[9] = true;
+	}
+
+	{
+		const String alphabet("abcdefghijklmnopqrstuvwxyz");
+		if (alphabet[12] == 'm')
+			testResult[10] = true;
 	}
 
 	for (int i = 0; i < testsToRun; ++i)

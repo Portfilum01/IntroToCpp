@@ -67,8 +67,7 @@ size_t String::Length() const
 String& String::Append(const String& _str)
 {
 	// Creates a new variable (myNewString) with enough memory for both strings
-	int tempLength = lengthOfString + _str.lengthOfString;
-	char* newMyString = new char[tempLength + 1];
+	char* newMyString = new char[lengthOfString + _str.lengthOfString + 1];
 
 	// Copies over old string info into myNewString
 	for (int i = 0; i < lengthOfString; i++)
@@ -86,8 +85,9 @@ String& String::Append(const String& _str)
 	delete[] myString;
 
 	// adds information from newMyString into myString.
-	newMyString[tempLength] = '\0';
+	newMyString[lengthOfString + _str.lengthOfString] = '\0';
 	myString = newMyString;
+	lengthOfString += _str.lengthOfString;
 
 	return *this;
 }
@@ -181,12 +181,8 @@ bool String::operator==(const String& _other)
 	{
 		// When mismatching letters are found, it returns false.
 		if (myString[i] != _other.myString[i])
-		{
 			return false;
-		}
 	}
-	// Returns true if it goes out of scope (meaning no mismatches are found)
-	return true;
 }
 
 char& String::operator[](size_t _index)

@@ -217,9 +217,11 @@ String& String::operator=(const String& _str)
 {
 	// Delete the used memory in myString
 	delete[] myString;
+
 	// Reassign enough memory to myStrijng
 	myString = new char[_str.lengthOfString + 1];
 	myString[_str.lengthOfString] = '\0';
+
 	// Copy over _str's string into myString and return the object
 	strcpy_s(myString, _str.lengthOfString +1, _str.myString);
 	return* this;

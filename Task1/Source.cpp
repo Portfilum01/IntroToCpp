@@ -170,7 +170,8 @@ int main()
 	{
 		// Makes isThisRight equal to the correct answer
 		String isThisRight("Incorrect Answer");
-		isThisRight = "Correct Answer";
+		String correctAnswer("Correct Answer");
+		isThisRight = correctAnswer;
 
 		//Checks to see if it succeeded
 		if (isThisRight == "Correct Answer")

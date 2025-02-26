@@ -58,3 +58,243 @@ Test 10 Const Subscript Operator:  Successful
 Test 11 Is equal to (=):  Successful 
 Test 12 Is less than Successful 
 
+2025 February 26, 21:43:06 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:45:09 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:45:36 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:45:43 | 92% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Failed 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:47:18 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:47:21 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:47:23 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:47:26 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:47:34 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:47:37 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:47:40 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:48:44 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:49:32 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:54:27 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 21:55:33 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+
+2025 February 26, 22:04:14 | 100% succeeded
+Test 0 String Constructor:  Successful 
+Test 1 Copy Constructor:  Successful 
+Test 2 Length:  Successful 
+Test 3 Append:  Successful 
+Test 4 ToLower:  Successful 
+Test 5 ToUpper:  Successful 
+Test 6 FindCharacter:  Successful 
+Test 7 Replace:  Successful 
+Test 8 Equal To Operator (==):  Successful 
+Test 9 Subscript Operator:  Successful 
+Test 10 Const Subscript Operator:  Successful 
+Test 11 Is equal to (=):  Successful 
+Test 12 Is less than Successful 
+

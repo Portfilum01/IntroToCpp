@@ -160,6 +160,10 @@ String& String::ReadFromConsole()
 	// Prints a prompt to console, then uses getline to put the user's input into myString (with a max of 80 characters
 	cout << "Feed me an input (max 80 characters): " << endl;
 	cin.getline(myString, 80);
+	if(myString != nullptr)
+	{
+		lengthOfString = strlen(myString) + 1;
+	}
 
 	// Returns the object
 	return *this;
@@ -172,7 +176,6 @@ String& String::WriteToConsole()
 	if (myString == nullptr)
 	{
 		cout << "nullptr detected";
-		return ;
 	}
 	cout << myString;
 	return* this;

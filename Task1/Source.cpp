@@ -222,20 +222,7 @@
 
 int main()
 {
-	// Declares how many tests there will be to run
-	const int testsToRun = 13;
-
-	// Makes a new array using the amount of tests to run as memory allocation
-	const char* testNames[testsToRun] = { "String Constructor: ", "Copy Constructor: ", "Length: ", "Append: ", "ToLower: ", "ToUpper: ", "FindCharacter: ", "Replace: ", "Is Equal To Operator (==): ", "Subscript Operator: ", "Const Subscript Operator: ", "Equal to (=): ", "Is less than"};
-	bool testResult[testsToRun] = {false, false, false, false, false, false, false, false, false, false, false, false, false};
-
-	// Initializes the percentage calculator.
-	int percentageCalculator = 0;
-
-	// For constructor string
-	{
-		String empty;
-		empty.ReadFromConsole();
-		empty.WriteToConsole();
-	}
+	String empty;
+	empty.ReadFromConsole();
+	empty.WriteToConsole();
 }

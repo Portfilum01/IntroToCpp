@@ -99,7 +99,7 @@ String& String::ToLower()
 	for (int i = 0; i < lengthOfString; i++)
 
 		// Checks to see if it is a capital letter on the ASCII table
-		if(myString[i] >= 65 && myString[i] <= 92)
+		if(myString[i] >= 65 && myString[i] <= 90)
 
 			//If it is, it'll add 32 (making it a lowercase)
 			myString[i] = myString[i] + 32;
@@ -169,8 +169,13 @@ String& String::ReadFromConsole()
 String& String::WriteToConsole()
 {
 	// Prints myString in the object to the console
+	if (myString == nullptr)
+	{
+		cout << "nullptr detected";
+		return ;
+	}
 	cout << myString;
-	return *this;
+	return* this;
 }
 
 

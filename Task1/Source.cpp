@@ -1,10 +1,10 @@
-//#define _CRT_SECURE_NO_WARNINGS
-//#include <iostream>
-//#include "String.h"
-//#include <fstream>
-//#include <ctime>
-//#include <iomanip>
-//#include <locale.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include "String.h"
+#include <fstream>
+#include <ctime>
+#include <iomanip>
+#include <locale.h>
 //
 //using namespace std;
 //
@@ -219,3 +219,12 @@
 //	}
 //}
 //
+
+int main()
+{
+	{
+		String empty;
+		empty.ReadFromConsole();
+		empty.WriteToConsole();
+	}
+}

@@ -183,6 +183,7 @@ bool String::operator==(const String& _other)
 		if (myString[i] != _other.myString[i])
 			return false;
 	}
+	return true;
 }
 
 char& String::operator[](size_t _index)

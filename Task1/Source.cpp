@@ -222,5 +222,7 @@
 
 int main()
 {
-
+	String objectOne = "3";
+	objectOne.ReadFromConsole();
+	std::cout << "Yoinkus sploinkus";
 }

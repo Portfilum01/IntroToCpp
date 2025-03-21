@@ -158,8 +158,8 @@ int String::Replace(const char _find, const char _replace)
 String& String::ReadFromConsole()
 {
 	// Prints a prompt to console, then uses getline to put the user's input into myString (with a max of 80 characters
-	cout << "Feed me an input (max 80 characters): " << endl;
-	cin.getline(myString, 80);
+	cout << "Read From Console input: " << endl;
+	cin.getline(myString, lengthOfString);
 	if(myString != nullptr)
 	{
 		lengthOfString = strlen(myString) + 1;
@@ -224,16 +224,21 @@ const char& String::operator[](size_t _index) const
 
 String& String::operator=(const String& _str)
 {
-	// Delete the used memory in myString
-	delete[] myString;
+	if(_str.myString != myString)
+	{
+		// Delete the used memory in myString
+		delete[] myString;
 
-	// Reassign enough memory to myStrijng
-	myString = new char[_str.lengthOfString + 1];
-	myString[_str.lengthOfString] = '\0';
+		// Reassign enough memory to myStrijng
+		myString = new char[_str.lengthOfString + 1];
+		myString[_str.lengthOfString] = '\0';
+		lengthOfString = _str.lengthOfString;
 
-	// Copy over _str's string into myString and return the object
-	strcpy_s(myString, _str.lengthOfString +1, _str.myString);
-	return* this;
+		// Copy over _str's string into myString and return the object
+		strcpy_s(myString, _str.lengthOfString + 1, _str.myString);
+		return*this;
+	}
+	return*this;
 }
 
 bool String::operator<(const String& _str)

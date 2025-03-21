@@ -197,7 +197,7 @@ bool String::operator==(const String& _other)
 char& String::operator[](size_t _index)
 {
 	// Detects whether or not its in range
-	if (_index < 0 || _index > lengthOfString)
+	if (_index < 0 || _index >= lengthOfString)
 	{
 		// Creating a variable to pass \0 as a char and return it if the above is true.
 		char noReturn = '\0';
@@ -208,7 +208,7 @@ char& String::operator[](size_t _index)
 
 const char& String::operator[](size_t _index) const
 {
-	if (_index < 0 || _index > lengthOfString)
+	if (_index < 0 || _index >= lengthOfString)
 	{
 		// Creating a variable to pass \0 as a char and return it if the above is true.
 		char noReturn = '\0';

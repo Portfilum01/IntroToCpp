@@ -222,7 +222,5 @@
 
 int main()
 {
-	String empty;
-	empty.ReadFromConsole();
-	empty.WriteToConsole();
+
 }
